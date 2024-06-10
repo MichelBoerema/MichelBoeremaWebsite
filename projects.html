@@ -7,7 +7,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="index.js"></script> -->
 </head>
 <body>
     <!-- Navbar -->
@@ -33,14 +34,120 @@
         </div>
     </nav>
 
-     <!-- Jumbotron -->
-     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-4"style = "color: purple;">Welcome to my Projects Page</h1>
-        </div>
-    </div>
+        <section class="pageInfo">
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                <h1 class="display-4"style = "color: purple;">Product Filter</h1>
+                <!-- search box -->
+                <div class="search-box">
+                    <form action="" onsubmit="return false">
+                        <input type="text" id="search" 
+                        placeholder="Search Product">
+                    </form>
+                </div>
+                <div class="filter-box">
+                    <!-- <button class="btn" data-filter="all">All</button>
+                    <button class="btn" data-filter="Action games">Action games</button>
+                    <button class="btn" data-filter="Race games">Race games</button>
+                    <button class="btn" data-filter="Real Time Strategy">Real Time Strategy</button> -->
+                    <button class="btn" data-filter="all">All</button>
+                    <button class="btn" data-filter="Actiongames">Action Games</button>
+                    <button class="btn" data-filter="RaceGames">Race Games</button>
+                    <button class="btn" data-filter="RTS">RTS</button>
+                </div>
+            </div>
+            <br>
+        </section>
 
-    <!-- Services section -->
+        <main>
+            <div class="slider-container">
+                <section class="container" id="store-products">
+                    <div class="row">
+                        <div class="store-product Actiongames">
+                            <img src="images/Quest for soup.png" class="card-img-top" alt="...">
+                            <div class="product-details">
+                                <h5 class="card-title">Stress: Quest for soup</h5>
+                                <a href="#">more</a>
+                            </div>
+                        </div>
+                        <div class="store-product Actiongames">
+                            <img src="images/PlanetAttack 1-1.png" class="card-img-top" alt="...">
+                            <div class="product-details">
+                                <h5 class="card-title">Planet Attack 2069</h5>
+                                <a href="#">more</a>
+                            </div>
+                        </div>
+                        <div class="store-product Actiongames">
+                            <img src="images/BattleTransformers 1-1.png" class="card-img-top" alt="...">
+                            <div class="product-details">
+                                <h5 class="card-title">BattleTransformers</h5>
+                                <a href="#">more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="store-product RaceGames">
+                            <img src="images/LV2Select.png" class="card-img-top" alt="...">
+                            <div class="product-details">
+                                <h5 class="card-title">Golf Racing 3D</h5>
+                                <a href="#">more</a>
+                            </div>
+                        </div>
+                        <div class="store-product RaceGames">
+                            <img src="images/Rico GT.png" class="card-img-top" alt="...">
+                            <div class="product-details">
+                                <h5 class="card-title">Rico GT</h5>
+                                <a href="#">more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="store-product RTS">
+                            <img src="images/RTS.png" class="card-img-top" alt="...">
+                            <div class="product-details">
+                                <h5 class="card-title">RTS</h5>
+                                <a href="#">more</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <script>
+            const btns = document.querySelectorAll(".btn");
+            const storeProducts = document.querySelectorAll(".store-product");
+        console.log("filter")
+        console.log(btns.length)
+
+        for (i = 0; i < btns.length; i++)
+        {
+
+            btns[i].addEventListener("click", (e) => {
+                e.preventDefault();
+
+                const filter = e.target.dataset.filter;
+                console.log(filter)
+
+                storeProducts.forEach((product)=> {
+                    if(filter == "all"){
+                        product.style.display = "block"
+                    }
+                    else{
+                        if(product.classList.contains(filter)){
+                            product.style.display = "block"
+                        }
+                        else{
+                            product.style.display = "none"
+                        }
+                    }
+                })
+            })
+        }
+            </script>
+
+    
     <section class="services">
         <div class="container">
             <h2 class="section-heading">My Games</h2>
@@ -72,6 +179,16 @@
                         <p class="card-text">this was my third project.<br>the goal of this game is to win the race from 5 other AI enemy's.</p>
                     </div>
                 </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/Planet Attack 2069.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Planet Attack 2069</h5>
+                            <p class="card-text">this was my first team project.<br>as the player you are suposed to make sure your base crystal is not destroyed. you do this by placing down towers that can defeat enemy's.</p>
+                        </div>
+                    </div>
             </div>
           </div>
       </section>

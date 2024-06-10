@@ -56,7 +56,7 @@ body {
   
   /* Services section styles */
   .services {
-    background-color: #f5f5f5;
+    background-color: #eee;
     padding: 100px 0;
   }
   
@@ -85,6 +85,7 @@ body {
   
   /* About section styles */
   .about {
+    background-color: lightgray;
     padding: 100px 0;
   }
   
@@ -107,7 +108,7 @@ body {
   
   /* Contact section styles */
   .contact {
-    background-color: #f5f5f5;
+    background-color: white;
     padding: 100px 0;
   }
   
@@ -158,26 +159,99 @@ body {
     background-color: purple;
   }
 
-  /* Jumbotron */
-  .jumbotron {
-    background-color: purple;
-  }
-
-  /* Services section */
-  .services .card {
-    background-color: purple;
+  .pageInfo{
+    background-color: #ddd;
   }
 
   /* About section */
   .about {
-    background-color: purple;
+    background-color: lightgray;
   }
   .btn {
+    font-size: 1rem;
+    text-decoration: none;
     background-color: purple;
     color: white;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 1rem -0.5rem 0.5rem 1rem;
   }
   .col-md-6{
     border-image-width: 600px;
   }
+
+  header{
+    background-color: #eee;
+    padding: 1rem;
+  }
+
+  header h1{
+    font-size: 2.5rem;
+    line-height: 2;
+    color: var(--color-primary);
+  }
+
+  form input{
+    width: 30rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    border-bottom: 2px solid var(--color-sec);
+  }
+
+  .slider-container{
+    border-image-width: 7px;
+  }
+  
+  .card{
+    image-resolution: 10;
+  }
+
+  .card-img-top {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 3px;
+    width: 200px;
+    margin: 10px;
+  }
+
+  header{
+    background-color: #eee;
+    padding: 1rem;
+  }
+
+  header h1{
+    font-size: 3.5rem;
+    line-height: 2;
+    color: var(--color-primary);
+  }
+
+  form input{
+    width: 30rem;
+    padding: 7px;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    border-bottom: 2px solid var(--color-sec);
+  }
+
+  #store-products{
+
+    border-image: 3rem;
+  }
+
+  .store-products{
+    display: grid;
+
+    border: 1px solid #eee;
+    border-radius: 3px;
+    max-width: 25rem;
+  }
+
+  
+
 
   
