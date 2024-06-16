@@ -40,13 +40,6 @@
             <br>
             <div class="container">
                 <h1 class="display-4"style = "color: purple;">Product Filter</h1>
-                <!-- search box -->
-                <div class="search-box">
-                    <form action="" onsubmit="return false">
-                        <input type="text" id="search" 
-                        placeholder="Search Product">
-                    </form>
-                </div>
                 <div class="filter-box">
                     <!-- <button class="btn" data-filter="all">All</button>
                     <button class="btn" data-filter="Action games">Action games</button>
@@ -56,6 +49,7 @@
                     <button class="btn" data-filter="Actiongames">Action Games</button>
                     <button class="btn" data-filter="RaceGames">Race Games</button>
                     <button class="btn" data-filter="RTS">RTS</button>
+                    <button class="btn" data-filter="Survival">Survival</button>
                 </div>
             </div>
             <br>
@@ -86,6 +80,13 @@
                                 <a href="#">more</a>
                             </div>
                         </div>
+                        <div class="store-product Actiongames">
+                            <img src="images/PongHeatseekerMainMenu.png" class="card-img-top" alt="...">
+                            <div class="product-details">
+                                <h5 class="card-title">Pong Heatseeker</h5>
+                                <a href="/PongHeatseekerWebGL/heatseekerwebgl.html">more</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="store-product RaceGames">
@@ -112,9 +113,27 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="store-product Survival">
+                            <img src="images/Orythia Mision.png" class="card-img-top" alt="...">
+                            <div class="product-details">
+                                <h5 class="card-title">Orythia Mission</h5>
+                                <a href="#">more</a>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
         </main>
+
+        <!-- a section to clear some space-->
+      <section class="services">
+        <br>
+        <br>
+        <br>
+        <br>
+      </section>
+
         <script>
             const btns = document.querySelectorAll(".btn");
             const storeProducts = document.querySelectorAll(".store-product");
@@ -145,52 +164,7 @@
                 })
             })
         }
-            </script>
+        </script>
 
-    
-    <section class="services">
-        <div class="container">
-            <h2 class="section-heading">My Games</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/PongHeatseekerMainMenu.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Pong Heatseeker</h5>
-                            <p class="card-text">this is the first ever project that I made.<br>in the Standard Pong game you have to shoot the ball behind the enemy padel<br>BUT, my game is the exact opisite.<br>
-                              <br>the paddles of the players are the goals so if you want to win you need to avoid the ball</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/BattleTransformers.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Battle Tansformers</h5>
-                            <p class="card-text">this is the second project that i made.<br>This 2d tank game has a transformers theme. it is a turn based gaem witch means if you are aiming and shooting the enemy wil wait their turn.</p>
-                        </div>
-                  </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card">
-                    <img src="images/LV2Select.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Golf Racing 3D</h5>
-                        <p class="card-text">this was my third project.<br>the goal of this game is to win the race from 5 other AI enemy's.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/Planet Attack 2069.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Planet Attack 2069</h5>
-                            <p class="card-text">this was my first team project.<br>as the player you are suposed to make sure your base crystal is not destroyed. you do this by placing down towers that can defeat enemy's.</p>
-                        </div>
-                    </div>
-            </div>
-          </div>
-      </section>
 </body>
 </html>

@@ -5,7 +5,6 @@ console.log(btns.length)
 
 for (i = 0; i < btns.length; i++)
     {
-
         btns[i].addEventListener("click", (e) => {
             e.preventDefault();
 
@@ -13,14 +12,18 @@ for (i = 0; i < btns.length; i++)
             console.log(filter)
 
             storeProducts.forEach((product)=> {
-                if(filter == "all"){
+                if(filter == "all")
+                {
                     product.style.display = "block"
                 }
-                else{
-                    if(product.classList.contains(filter)){
+                else
+                {
+                    if(product.classList.contains(filter))
+                    {
                         product.style.display = "block"
                     }
-                    else{
+                    else
+                    {
                         product.style.display = "none"
                     }
                 }
