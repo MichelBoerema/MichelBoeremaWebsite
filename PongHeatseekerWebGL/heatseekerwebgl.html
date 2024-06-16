@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unity WebGL Player | PongHeatseeker</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/style.css">
-  </head>
-  <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-          <a class="navbar-brand"style = "color: purple;" href="#">Michel Boerema</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active">
-                      <a class="nav-link"style = "color: purple;" href="/index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="/projects.html">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="/contact.html">Contact</a>
-                  </li>
-              </ul>
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unity WebGL Player | PongHeatseeker</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" style="color: purple;" href="#">Michel Boerema</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" style="color: purple;" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
+    </div>
   </nav>
 
   <div class="container">
@@ -50,26 +53,26 @@
           <div id="unity-fullscreen-button"></div>
           <div id="unity-build-title">PongHeatseeker</div>
           <div class="row">
-              <div class="controls">
-                <h4>Controls: <br>
-                  Left Player: <br>
-                  A = Go up <br>
-                  Z = Go down</h4>
-                </div>
-              <div class="controls">
-                  <h4>     <br>
-                  Right Player: <br>
-                  K = Go up <br>
-                  M = Go down</h4>
-              </div>
+            <div class="controls">
+              <h4>Controls: <br>
+                Left Player: <br>
+                A = Go up <br>
+                Z = Go down</h4>
+            </div>
+            <div class="controls">
+              <h4> <br>
+                Right Player: <br>
+                K = Go up <br>
+                M = Go down</h4>
+            </div>
           </div>
 
           <h5>The goal of the game is avoiding the ball so the enemy isn't scoring in the net (your paddle)</h5>
 
         </div>
+      </div>
     </div>
-  </div>
-    
+
     <script>
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
@@ -94,7 +97,7 @@
         if (type == 'error') div.style = 'background: red; padding: 10px;';
         else {
           if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
-          setTimeout(function() {
+          setTimeout(function () {
             warningBanner.removeChild(div);
             updateBannerVisibility();
           }, 5000);
@@ -162,5 +165,6 @@
       };
       document.body.appendChild(script);
     </script>
-  </body>
+</body>
+
 </html>
