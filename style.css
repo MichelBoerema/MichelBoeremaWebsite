@@ -304,23 +304,6 @@ form input {
   opacity: 1;
 }
 
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
 /* Position the "next button" to the right */
 .next {
   right: 0;
@@ -379,4 +362,27 @@ form input {
   to {
     opacity: 1
   }
+}
+
+.carousel {
+  margin: 10px auto;
+  width: 50%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.carousel h2 {
+  text-align: center;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
 }

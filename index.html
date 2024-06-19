@@ -63,68 +63,18 @@
     </section>
 
     <!-- Slideshow container -->
-    <div class="slideshow-container">
-
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 5</div>
-            <img src="images/PlanetAttack 1-1.png" style="width:30%">
-            <div class="text">PlanetAttack 2069</div>
+    <section id="home" class="carousel">
+        <h2>projects</h2>
+        <div class="carousel-container">
+            <img src="/images/BattleTransformers_SlideShow.png" alt="project 1">
+            <img src="/images/Orythia Mision_slideShow.png" alt="project 2">
+            <img src="/images/Quest for soup_SlideShow.png" alt="project 3">
+            <img src="/images/Rico GT_SlideShow.png" alt="project 4">
+    
         </div>
+    </section>
 
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 5</div>
-            <img src="images/BattleTransformers 1-1.png" style="width:30%">
-            <div class="text">BattleTransformers</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 5</div>
-            <img src="images/Orythia Mision.png" style="width:30%">
-            <div class="text">Orythia Mission</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">4 / 5</div>
-            <img src="images/Quest for soup.png" style="width:30%">
-            <div class="text">Quest for Soup</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">5 / 5</div>
-            <img src="images/Rico GT.png" style="width:30%">
-            <div class="text">Rico GT</div>
-        </div>
-    </div>
     <br>
-    <script>
-        let slideIndex = 0;
-        showSlides();
-
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides() {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].classList.remove("active");
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1;
-            }
-            slides[slideIndex - 1].classList.add("active");
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        } 
-    </script>
 
     <!-- About section -->
     <section class="about">
@@ -189,6 +139,8 @@
         </div>
 
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
