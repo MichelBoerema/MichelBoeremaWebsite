@@ -6,151 +6,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michel Boerema Website ProjectsPage</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" style="color: purple;" href="#">Michel Boerema</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" style="color: purple;" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./projects.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center">
+                    <img class="w-6 h-6" src="/images/GamePad.png" alt="Description of image">
+                </div>
+                <span class="ml-3 text-xl">Michel Boerema</span>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 hover:text-gray-900" href="./index.html">Home</a>
+                <a class="mr-5 hover:text-gray-900" href="./projects.html">Projects</a>
+                <a class="mr-5 hover:text-gray-900" href="./contact.html">Contact</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <section class="pageInfo">
-        <br>
-        <br>
-        <br>
-        <div class="container">
-            <h1 class="display-4" style="color: purple;">Product Filter</h1>
-            <div class="filter-box">
-                <button class="btn" data-filter="all">All</button>
-                <button class="btn" data-filter="Actiongames">Action Games</button>
-                <button class="btn" data-filter="RaceGames">Race Games</button>
-                <button class="btn" data-filter="RTS">RTS</button>
-                <button class="btn" data-filter="Survival">Survival</button>
+
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap w-full mb-20">
+                <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Product filter</h1>
+                    <div class="h-1 w-20 bg-purple-500 rounded"></div>
+                </div>
+                
+                <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">On this page, you can see all the projects that I have made over the past 2 years.</p>
+                <button class="btn text-white bg-purple-500 border-0 py-2 px-8 hover:bg-purple-600 rounded text-lg" data-filter="all">ALL</button>
+                <button class="btn text-white bg-purple-500 border-0 py-2 px-8 hover:bg-purple-600 rounded text-lg" data-filter="Actiongames">ACTION GAMES</button>
+                <button class="btn text-white bg-purple-500 border-0 py-2 px-8 hover:bg-purple-600 rounded text-lg" data-filter="RaceGames">RACE GAMES</button>
+                <button class="btn text-white bg-purple-500 border-0 py-2 px-8 hover:bg-purple-600 rounded text-lg" data-filter="RTS">REAL TIME STRATEGY</button>
+                <button class="btn text-white bg-purple-500 border-0 py-2 px-8 hover:bg-purple-600 rounded text-lg" data-filter="Survival">SURVIVAL GAMES</button>
+            </div>
+            <div class="flex flex-wrap -m-4">
+
+                <div class="store-product Actiongames xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6"
+                            src="/images/PongHeatseekerMainMenu.png" alt="content">
+                        <h3 class="tracking-widest text-purple-500 text-xs font-medium title-font">ACTION GAME</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Pong: Heatseeker</h2>
+                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat.
+                            Distillery hexagon disrupt edison bulbche.</p>
+                    </div>
+                </div>
+                <div class="store-product Survival xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6"
+                            src="/images/Orythia Mision.png" alt="content">
+                        <h3 class="tracking-widest text-purple-500 text-xs font-medium title-font">SURVIVAL</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Orythia Mission</h2>
+                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat.
+                            Distillery hexagon disrupt edison bulbche.</p>
+                    </div>
+                </div>
+                <div class="store-product RaceGames xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6"
+                            src="/images/Rico GT.png" alt="content">
+                        <h3 class="tracking-widest text-purple-500 text-xs font-medium title-font">RACE GAME</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Rico GT</h2>
+                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat.
+                            Distillery hexagon disrupt edison bulbche.</p>
+                    </div>
+                </div>
+                <div class="store-product Actiongames xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6"
+                            src="/images/Quest for soup.png" alt="content">
+                        <h3 class="tracking-widest text-purple-500 text-xs font-medium title-font">ACTION GAME</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Stress: Quest for soup</h2>
+                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat.
+                            Distillery hexagon disrupt edison bulbche.</p>
+                    </div>
+                </div>
+                <div class="store-product Actiongames xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6"
+                            src="/images/PlanetAttack 1-1.png" alt="content">
+                        <h3 class="tracking-widest text-purple-500 text-xs font-medium title-font">ACTION GAME</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Planet attack 2069</h2>
+                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat.
+                            Distillery hexagon disrupt edison bulbche.</p>
+                    </div>
+                </div>
+                <div class="store-product Actiongames xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6"
+                            src="/images/BattleTransformers 1-1.png" alt="content">
+                        <h3 class="tracking-widest text-purple-500 text-xs font-medium title-font">ACTION GAME</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">BattleTransformers</h2>
+                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat.
+                            Distillery hexagon disrupt edison bulbche.</p>
+                    </div>
+                </div>
+                
+
+                
+                <div class="store-product RaceGames xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6"
+                            src="/images/LV2Select.png" alt="content">
+                        <h3 class="tracking-widest text-purple-500 text-xs font-medium title-font">RACE GAME</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Golf racing 3D</h2>
+                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat.
+                            Distillery hexagon disrupt edison bulbche.</p>
+                    </div>
+                </div>
+
+                <div class="store-product RTS xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6"
+                            src="/images/RTS.png" alt="content">
+                        <h3 class="tracking-widest text-purple-500 text-xs font-medium title-font">REAL TIME STRATEGY</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">RTS</h2>
+                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat.
+                            Distillery hexagon disrupt edison bulbche.</p>
+                    </div>
+                </div>
+
+                
             </div>
         </div>
-        <br>
     </section>
 
-    <main>
-        <div class="slider-container">
-            <section class="container" id="store-products">
-
-                <div class="row">
-                    <div class="store-product Actiongames">
-                        <img src="images/Quest for soup.png" class="card-img-top" alt="...">
-                        <div class="product-details">
-                            <h5 class="card-title">Stress: Quest for soup</h5>
-                            <a href="#">more</a>
-                        </div>
-                    </div>
-                    <div class="store-product Actiongames">
-                        <img src="images/PlanetAttack 1-1.png" class="card-img-top" alt="...">
-                        <div class="product-details">
-                            <h5 class="card-title">Planet Attack 2069</h5>
-                            <a href="#">more</a>
-                        </div>
-                    </div>
-                    <div class="store-product Actiongames">
-                        <img src="images/BattleTransformers 1-1.png" class="card-img-top" alt="...">
-                        <div class="product-details">
-                            <h5 class="card-title">BattleTransformers</h5>
-                            <a href="#">more</a>
-                        </div>
-                    </div>
-                    <div class="store-product Actiongames">
-                        <img src="images/PongHeatseekerMainMenu.png" class="card-img-top" alt="...">
-                        <div class="product-details">
-                            <h5 class="card-title">Pong Heatseeker</h5>
-                            <a href="heatseekerwebgl.html">more</a>
-                        </div>
-                    </div>
+    <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center">
+                    <img class="w-6 h-6" src="/images/GamePad.png" alt="Description of image">
                 </div>
-
-                <div class="row">
-                    <div class="store-product RaceGames">
-                        <img src="images/LV2Select.png" class="card-img-top" alt="...">
-                        <div class="product-details">
-                            <h5 class="card-title">Golf Racing 3D</h5>
-                            <a href="#">more</a>
-                        </div>
-                    </div>
-                    <div class="store-product RaceGames">
-                        <img src="images/Rico GT.png" class="card-img-top" alt="...">
-                        <div class="product-details">
-                            <h5 class="card-title">Rico GT</h5>
-                            <a href="#">more</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="store-product RTS">
-                        <img src="images/RTS.png" class="card-img-top" alt="...">
-                        <div class="product-details">
-                            <h5 class="card-title">RTS</h5>
-                            <a href="#">more</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="store-product Survival">
-                        <img src="images/Orythia Mision.png" class="card-img-top" alt="...">
-                        <div class="product-details">
-                            <h5 class="card-title">Orythia Mission</h5>
-                            <a href="#">more</a>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-        </div>
-    </main>
-
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <footer class="footer">
-        <div class="container">
-            <h1>Michel Boerema</h1>
-            <br>
-            <br>
-            <br>
-            <h1>E-Mail adress</h1>
-            <h2>boeremamichel@gmail.com</h2>
-            <hr>
-            <a href="https://www.linkedin.com/in/michel-boerema-314768299/" target="_blank">
-                <h2 class="footer-link">LinkedIn</h2>
+                <span class="ml-3 text-xl">Michel Boerema</span>
             </a>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a class="ml-3 text-gray-500" href="https://www.instagram.com/boeremamichel/" target="_blank">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500" href="https://www.linkedin.com/in/michel-boerema-314768299/"
+                    target="_blank">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                        </path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
         </div>
-
     </footer>
+
     <script src="script.js"></script>
 </body>
 
